@@ -1,0 +1,31 @@
+Address,Status geocode,Formatted address,Latitude,Longitude,Type,Location Type,Street number,Street,Postal code,City,Country,Region,Department,Department number,Plus_Code,Plus_Code_Compound,Plus_Code_Global,id
+"Aachen, Germany",Ok,"52 Aachen, Germany",50.7753455,6.0838868,"locality, political",APPROXIMATE,,,52,Aachen,Germany,North Rhine-Westphalia,Cologne,K,,,,1
+Austria,Ok,Austria,47.516231,14.550072,"country, political",APPROXIMATE,,,,,Austria,,,,,,,2
+Basque country,Ok,"Basque Country, Spain",42.9896248,-2.6189273,"administrative_area_level_1, political",APPROXIMATE,,,,,Spain,Basque Country,,,,,,3
+Belgium,Ok,Belgium,50.503887,4.469936,"country, political",APPROXIMATE,,,,,Belgium,,,,,,,4
+Catalonia,Ok,"Catalonia, Spain",41.5911589,1.5208624,"administrative_area_level_1, political",APPROXIMATE,,,,,Spain,Catalonia,,,,,,5
+Georgia,"2 found, use single geocode.",Georgia,42.315407,43.356892,"country, political",APPROXIMATE,,,,,Georgia,,,,,,,6
+Germany,Ok,Germany,51.165691,10.451526,"country, political",APPROXIMATE,,,,,Germany,,,,,,,7
+"Freiburg, Germany",Ok,"79 Freiburg im Breisgau, Germany",47.9990077,7.8421043,"locality, political",APPROXIMATE,,,79,Freiburg im Breisgau,Germany,Baden-Württemberg,Freiburg,Freiburg,,,,8
+"Frankurt(Oder), Germany",Ok,"15 Frankfurt an der Oder, Germany",52.3472237,14.5505673,"locality, political",APPROXIMATE,,,15,Frankfurt an der Oder,Germany,Brandenburg,słubicki,słubicki,,,,9
+Italy,Ok,Italy,41.87194,12.56738,"country, political",APPROXIMATE,,,,,Italy,,,,,,,10
+Lithuania,Ok,Lithuania,55.169438,23.881275,"country, political",APPROXIMATE,,,,,Lithuania,,,,,,,11
+Luxemburg ,Ok,Luxembourg,49.815273,6.129583,"country, political",APPROXIMATE,,,,,Luxembourg,,,,,,,12
+Netherland,Ok,Netherlands,52.132633,5.291266,"country, political",APPROXIMATE,,,,,Netherlands,,,,,,,13
+Norway,Ok,Norway,60.472024,8.468946,"country, political",APPROXIMATE,,,,,Norway,,,,,,,14
+"Krakow, Poland",Ok,"Kraków, Poland",50.0646501,19.9449799,"locality, political",APPROXIMATE,,,30,Kraków,Poland,Lesser Poland Voivodeship,Kraków,Kraków,,,,15
+Poland,Ok,Poland,51.919438,19.145136,"country, political",APPROXIMATE,,,,,Poland,,,,,,,16
+Spain,Ok,Spain,40.463667,-3.74922,"country, political",APPROXIMATE,,,,,Spain,,,,,,,17
+"Straßburg, France",Ok,"Strasbourg, France",48.5734053,7.7521113,"locality, political",APPROXIMATE,,,,Strasbourg,France,Grand Est,Bas-Rhin,Bas-Rhin,,,,18
+England,Ok,"England, UK",52.3555177,-1.1743197,"administrative_area_level_1, political",APPROXIMATE,,,,,United Kingdom,England,,,,,,19
+China,Ok,China,35.86166,104.195397,"country, political",APPROXIMATE,,,,,China,,,,,,,20
+Taiwan,Ok,Taiwan,23.69781,120.960515,"country, political",APPROXIMATE,,,,,Taiwan,,,,,,,21
+Taiwan,Ok,Taiwan,23.69781,120.960515,"country, political",APPROXIMATE,,,,,Taiwan,,,,,,,22
+Hongkong,Ok,Hong Kong,22.3193039,114.1693611,"country, political",APPROXIMATE,,,,,Hong Kong,,,,,,,23
+Japan,Ok,Japan,36.204824,138.252924,"country, political",APPROXIMATE,,,,,Japan,,,,,,,24
+Nepal,Ok,Nepal,28.394857,84.124008,"country, political",APPROXIMATE,,,,,Nepal,,,,,,,25
+Mexico,Ok,Mexico,23.634501,-102.552784,"country, political",APPROXIMATE,,,,,Mexico,,,,,,,26
+Nicaragua,Ok,Nicaragua,12.865416,-85.207229,"country, political",APPROXIMATE,,,,,Nicaragua,,,,,,,27
+Syria,Ok,Syria,34.802075,38.996815,"country, political",APPROXIMATE,,,,,Syria,,,,,,,28
+Turkey,Ok,Türkiye,38.963745,35.243322,"country, political",APPROXIMATE,,,,,Türkiye,,,,,,,29
+Madagascar,Ok,Madagascar,-18.766947,46.869107,"country, political",APPROXIMATE,,,,,Madagascar,,,,,,,30
