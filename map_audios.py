@@ -2,7 +2,7 @@ import streamlit as st
 import folium
 from streamlit_folium import st_folium
 import pandas as pd
-from pydub import AudioSegment
+#from pydub import AudioSegment
 import random
 from colorama import Fore, Style
 import hashlib
@@ -24,8 +24,7 @@ coordinates_data = pd.read_csv(
     "data/border - coordinates.csv")  # CSV should have 'latitude', 'longitude', 'location', and 'audio' columns
 merged_data = pd.merge(general_info, coordinates_data, on=["id", "Address"], how="outer")
 merged_data.to_csv("data/a_world_without_border.csv", index=False)
-
-AudioSegment.converter = "/path/to/ffmpeg"  # Adjust this path as needed
+#AudioSegment.converter = "/path/to/ffmpeg"  # Adjust this path as needed
 
 # Initialize Streamlit App
 st.title("A World without Borders")
@@ -60,11 +59,22 @@ folium.plugins.Fullscreen(
     force_separate_button=True,
 ).add_to(m)
 
+import base64
+def encode_audio_files(audio_filepath):
+    audio_file = open(audio_filepath, 'rb')
+    audio_bytes = audio_file.read()
+
+    # audio_bytes = open(audio_file).read()
+    encoded_bytes = base64.b64encode(audio_bytes).decode('utf-8')
+
+    return encoded_bytes
+
 for id, row in merged_data.iterrows():
     # Create a relative path to the audio file
-    audio_file_path1 = {row['Audio1']}
-    audio_file_path2 = {row['Audio2']}
-    print(audio_file_path2)
+    audio_file_path1 = row['Audio1']
+    audio_file_path2 = row['Audio2']
+    audio_encoded1 = encode_audio_files(audio_file_path1)
+    audio_encoded2 = encode_audio_files(audio_file_path2)
     popup_html = f"""
     <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; color: green; background-color: lightgreen; padding: 20px; border-radius: 10px;">
         <b>Location:</br> 
@@ -77,17 +87,19 @@ for id, row in merged_data.iterrows():
         </b>{row['Greet']}<br>     
         <b>Bordering countries:</br> 
         </b>{row['Bordering_countries']}</br>
-
         <b>Audio Language:</br> 
-        </b> {'English'}</br>
-        <audio controls>
-            <source src="{audio_file_path1}" type="audio/mp3">
-        </audio>
-        </b> {row['Language']}</br>
-        <audio controls>
-            <source src="{audio_file_path2}" type="audio/mp3">
-        </audio>
+        {row['Language']}
+        <br>
+        <audio controls src="data:audio/wav;base64,{audio_encoded1}"></audio>
+        <br>
+        <b> {'English'}</b>
+        <br>
+        <audio controls src="data:audio/wav;base64,{audio_encoded2}"></audio>
         """
+
+
+
+
     # Get a fixed color for each location
     marker_color = get_fixed_color(row['Latitude'], row['Longitude'])
     folium.Marker(
